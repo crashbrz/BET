@@ -19,6 +19,16 @@ Usage example:
  ```
 - The above command will import all sites listed in url_list.txt and schedule each one to start the scan on January 15, 2099, at 12:05. Also, the scan will execute on the same date/time every month after the starting date.
 
+## BSI (Burp Scan ID) ##
+- Retrieves all scans names and ID's from Burp Enterprise.
+- The Scan ID can be used as -s flag on Burp Importer & Scheduler(bis.go)
+- Grepable output
+
+Usage example:
+```
+──(crash㉿Anubis)-[~]
+└─$ go run bis.go -u https://burpserver.yourcompany.com:8080 -k BvujYxnHNNKPtNXfULfxhjXuyUjngCQn | grep -i YourScanName | cut -d ":" -f 2
+```
 ### Usage/Help ###
 Please refer to the output of -h and -v for usage information and general help. Also, you can contact me (@crashbrz) on Twitter<br>
 
