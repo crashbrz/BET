@@ -23,12 +23,26 @@ Usage example:
 - Retrieves all scans names and ID's from Burp Enterprise.
 - The Scan ID can be used as -s flag on Burp Importer & Scheduler(bis.go)
 - Grepable output
+- File: bis.go
 
 Usage example:
 ```
 ──(crash㉿Anubis)-[~]
 └─$ go run bis.go -u https://burpserver.yourcompany.com:8080 -k BvujYxnHNNKPtNXfULfxhjXuyUjngCQn | grep -i YourScanName | cut -d ":" -f 2
 ```
+
+## GetFolderId ##
+- Retrieves all folders names and ID's from Burp Enterprise.
+- The Folder ID can be used as -i flag on BurpDeleteFolder.go
+- Grepable output
+- File: GetFolderId.go
+
+Usage example:
+```
+──(crash㉿Anubis)-[~]
+└─$ go run GetFolderId.go -u https://burpserver.yourcompany.com:8080 -k BvujYxnHNNKPtNXfULfxhjXuyUjngCQn | grep -i YourFolderName | cut -d ":" -f 2
+```
+
 ### Usage/Help ###
 Please refer to the output of -h and -v for usage information and general help. Also, you can contact me (@crashbrz) on Twitter<br>
 
@@ -43,4 +57,4 @@ BET and the tools are licensed under the SushiWare license. Check [docs/license.
 Tested on:<br>
 Go version: go1.17.6 linux/amd64<br>
 Kali 2021.4
-Ubunto 19
+Ubunto 20
