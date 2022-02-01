@@ -34,13 +34,25 @@ Usage example:
 ## GetFolderId ##
 - Retrieves all folders names and ID's from Burp Enterprise.
 - The Folder ID can be used as -i flag on BurpDeleteFolder.go
-- Grepable output
+- Grepable output.
 - File: GetFolderId.go
 
 Usage example:
 ```
 ──(crash㉿Anubis)-[~]
 └─$ go run GetFolderId.go -u https://burpserver.yourcompany.com:8080 -k BvujYxnHNNKPtNXfULfxhjXuyUjngCQn | grep -i YourFolderName | cut -d ":" -f 2
+```
+
+## DeleteFolder ##
+- Delete a given folder by ID.
+- The Folder ID can be retrieved running the GetFolderId tool.
+- Grepable output
+- File: DeleteFolder.go
+
+Usage example:
+```
+──(crash㉿Anubis)-[~]
+└─$ go run GetFolderId.go -u https://burpserver.yourcompany.com:8080 -k BvujYxnHNNKPtNXfULfxhjXuyUjngCQn -i 9999
 ```
 
 ### Usage/Help ###
