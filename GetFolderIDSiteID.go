@@ -52,7 +52,7 @@ func main() {
 	}
 
 	if *version {
-		fmt.Println("Burp Enterprise Scan ID Version:", bgsi)
+		fmt.Println("Burp Enterprise Get the SiteID and the respective Folder ID:", bgsi)
 		fmt.Println("Under the SushiWare license.")
 		os.Exit(0)
 	}
