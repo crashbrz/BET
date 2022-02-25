@@ -55,6 +55,17 @@ Usage example:
 └─$ go run GetFolderId.go -u https://burpserver.yourcompany.com:8080 -k BvujYxnHNNKPtNXfULfxhjXuyUjngCQn -i 9999
 ```
 
+## GetFolderIDSiteID ##
+- Dumps all sites with their respective ID and current Folder ID. (Folder ID 0 is the root folder, the default folder after importing)
+- Grepable output
+- File: GetFolderIDSiteID.go
+
+Usage example:
+```
+──(crash㉿Anubis)-[~]
+└─$ go run GetFolderIDSiteID.go -u https://burpserver.yourcompany.com:8080 -k BvujYxnHNNKPtNXfULfxhjXuyUjngCQn
+```
+
 ### Usage/Help ###
 Please refer to the output of -h and -v for usage information and general help. Also, you can contact me (@crashbrz) on Twitter<br>
 
